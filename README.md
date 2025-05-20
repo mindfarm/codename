@@ -1,7 +1,5 @@
 # Codename
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/lucasepe/codename?style=flat-square)](https://goreportcard.com/report/github.com/lucasepe/codename) &nbsp;&nbsp;&nbsp;  [![PkgGoDev](https://pkg.go.dev/badge/github.com/lucasepe/codename)](https://pkg.go.dev/github.com/lucasepe/codename)
-
 > an [RFC1178](https://tools.ietf.org/html/rfc1178) implementation to generate pronounceable, sometimes even memorable, _"superhero like"_ codenames, consisting of a random combination of adjective and noun.
 
 
@@ -14,7 +12,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/lucasepe/codename"
+	"github.com/mindfarm/codename"
 )
 
 func main() {
@@ -33,14 +31,14 @@ func main() {
 This is how the output looks like (since it's random your will be different).
 
 ```txt
-absolute-karatecha
-moving-colleen
-game-nova
-fine-madrox
-pro-penguin
-keen-morbius
-firm-iron
-refined-epoch
+absolutekaratecha
+movingcolleen
+gamenova
+finemadrox
+propenguin
+keenmorbius
+firmiron
+refinedepoch
 ```
 
 You can request the addition of a token to create even more entropy ([Try it!](https://play.golang.org/p/5gZTKfLyIUN)):
@@ -50,7 +48,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/lucasepe/codename"
+	"github.com/mindfarm/codename"
 )
 
 func main() {
@@ -64,17 +62,4 @@ func main() {
 		fmt.Println(name)
 	}
 }
-```
-
-note the token (with the specified length) added at the end:
-
-```txt
-hopeful-toad-men-133b
-blessed-man-thing-2bdc
-unique-starfox-4271
-full-butterfly-2470
-accepted-santa-claus-e24e
-merry-belphegor-65da
-willing-medusa-cdf4
-adapting-nightstar-f626
 ```
